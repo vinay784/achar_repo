@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Background.jpg</file>
+        <file>MusicIcon@2.jpg</file>
+        <file>RadioIcon.jpg</file>
+        <file>HighLightBeam.jpg</file>
+        <file>Wiper.jpg</file>
+        <file>CarNew.jpg</file>
+        <file>ThermoMtr.jpg</file>
+        <file>RightArow</file>
+        <file>Left</file>
+        <file>PlusSymbol.jpg</file>
+        <file>MInus.jpg</file>
+        <file>Heated-rear-windowDefrost.jpg</file>
+        <file>Humanposition.jpg</file>
+        <file>mirror defroster.jpg</file>
+        <file>windscreen-defrost.png</file>
+        <file>snow.jpg</file>
+        <file>Down</file>
+        <file>UP</file>
+    </qresource>
+</RCC>
