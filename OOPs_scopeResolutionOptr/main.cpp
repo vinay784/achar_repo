@@ -71,44 +71,83 @@ int main()
 
 
 //Inheritence
-class Employee
-{
-private:
-    double salary=5000; //As this variable is declared as private nobody can access this variable directly
-public:
-    void setSalary(double s)
-    {
-        salary=s;  //This method is useful to indirectly accessthe private variable
-    }
+//class Employee
+//{
+//private:
+//    double salary=5000; //As this variable is declared as private nobody can access this variable directly
+//public:
+//    void setSalary(double s)
+//    {
+//        salary=s;  //This method is useful to indirectly accessthe private variable
+//    }
 
-    double getSalary()
-    {
-        return salary;  //returning the assigned variable
-    }
+//    double getSalary()
+//    {
+//        return salary;  //returning the assigned variable
+//    }
+//};
+
+//class Employeer: public Employee
+//{
+
+//public:
+//       string companyName="Amazon.com";
+//       void payDetail(double s)
+//{
+//    s=450000;
+//    cout<<"My salary in "<<companyName <<"is:" <<s<<endl;
+
+//}
+
+//};
+
+//int main()
+//{
+
+//    Employeer obj;  //obj is an object of type Employee (class), which means obj can be used to access the information and modify the information of that particualr class.
+//    obj.setSalary(45000);
+//    obj.getSalary();
+//    obj.payDetail(4555);
+//    //cout<<"Revised pay:"<<obj.payDetail()<<endl;
+//    return 0;
+//}
+
+
+
+#include<iostream>
+using namespace std;
+class Animal{
+public:
+   //Pure Virtual Function
+   virtual void sound() = 0;
+
+   //Normal member Function
+   void sleeping() {
+      cout<<"Sleeping";
+   }
 };
 
-class Employeer: public Employee
-{
 
+
+class Dog: public Animal{
 public:
-       string companyName="Amazon.com";
-       void payDetail(double s)
-{
-    s=450000;
-    cout<<"My salary in "<<companyName <<"is:" <<s<<endl;
-
-}
-
+   void sound() {
+      cout<<"Woof"<<endl;
+   }
 };
 
-int main()
-{
 
-    Employeer obj;  //obj is an object of type Employee (class), which means obj can be used to access the information and modify the information of that particualr class.
-    obj.setSalary(45000);
-    obj.getSalary();
-    obj.payDetail(4555);
-    //cout<<"Revised pay:"<<obj.payDetail()<<endl;
+int main(){
+    Animal *obj=new Dog();
+    obj->sound();
+    obj->sleeping();
+    cout<<endl;
     return 0;
-}
 
+
+
+//   Dog obj;
+//   obj.sound();
+//   obj.sleeping();
+   return 0;
+}
